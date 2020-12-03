@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <title>Idle Alchemy</title>
+</head>
+<body>
+    <div id="game">
+        <div id="resources">
+            <div>
+                Gold: {{ resource.gold }}
+            </div>
+            <div>
+                Reagents: {{ resource.ingredients }}
+            </div>
+        </div>
+        <div id="actions">
+            <div id="gathering" class="action-box">
+                <button id="gather-button" class="action-button">Gather</button>
+            </div>
+            <div id="brewery" class="action-box">
+                <button id="gather-button" class="action-button">Brew</button>
+            </div>
+        </div>
+        <div id="inventory">
+            <div style="font-size: 20px;">
+                Potions: {{ inventory.filled }}/{{ inventory.capacity }}
+            </div>
+            <div id="items">
+                <div class="item-box" v-for="inventory.capacity"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script> 
+</html>
