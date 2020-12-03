@@ -1,5 +1,11 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Nerko One', cursive;
+}
+
+body {
+	background-color: rgb(22, 24, 40);
+	color: rgb(181, 182, 191);
 }
 
 #app {
@@ -28,14 +34,35 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    border: 1px solid black;
+	border: 1px solid black;
     width: 50%;
     padding: 10px;
 }
 
 .action-button {
     width: 100px;
-    height: 40px;
+	height: 40px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	background-color: rgb(55, 60, 100);
+	color: rgb(181, 182, 191);
+}
+
+.action-button:focus {
+	border: none;
+	outline: none;
+}
+
+.action-button:active {
+	border: none;
+	outline: none;
+	background-color: rgb(96, 103, 168);
+}
+
+.big {
+	font-size: 28px;
 }
 
 #inventory {
